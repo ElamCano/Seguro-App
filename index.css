@@ -16,6 +16,7 @@
 .header-logo {
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 .nav {
   display: flex;
@@ -56,6 +57,7 @@
   border: none;
   width: 200px;
   margin-top: 20px;
+  cursor: pointer;
 }
 .hero-button:hover {
   background-color: white;
@@ -148,6 +150,7 @@
   border: 1px solid rgb(248, 248, 248);
   width: 100px;
   align-self: center;
+  cursor: pointer;
 }
 .button-form:hover {
   background-color: white;
@@ -194,7 +197,32 @@
   color: #f5f4f4;
   font-size: 15px;
 }
+.select-output {
+  color: #f5f4f4;
+  margin-top: 20px;
+  align-self: center;
+  font-weight: 600;
+}
+.burger {
+  display: none;
+  width: 30px;
+}
 @media (max-width: 800px) {
+  .burger {
+    display: block;
+  }
+  .menu-nav {
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+    color: #fff;
+    padding: 30px;
+    font-size: 20px;
+  }
+  .menu-nav a {
+    text-decoration: none;
+    padding: 5px;
+  }
   .nav {
     display: none;
   }

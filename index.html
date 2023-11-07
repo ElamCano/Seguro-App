@@ -15,10 +15,21 @@
   <body>
     <header class="header">
       <img src="./public/logo.svg" alt="logo" class="header-logo" />
+      <img
+        src="./public/burger.svg"
+        alt="burger"
+        class="burger"
+        id="menu-burger"
+      />
       <nav class="nav">
         <a href="">Inicio</a><a href="">Acerca de</a><a href="">Contacto</a>
       </nav>
     </header>
+    <nav class="menu-nav" style="display: none" id="menu-nav">
+      <a href="">Inicio</a>
+      <a href="">Acerca de</a>
+      <a href="">Contacto</a>
+    </nav>
     <main>
       <section class="hero">
         <div class="hero-words">
@@ -99,12 +110,13 @@
             class="content-input"
             required
           />
-          <select name="plan" id="plan" required class="content-select">
+          <select name="plan" id="select-plan" required class="content-select">
             <option value>Seleccionar plan</option>
             <option value="500">Básico</option>
-            <option value="100">Intermedio</option>
+            <option value="1000">Intermedio</option>
             <option value="1500">Premium</option>
           </select>
+          <p id="select-output" class="select-output"></p>
           <button type="submit" class="button-form">Enviar</button>
         </form>
       </section>
@@ -130,5 +142,6 @@
         Cano
       </p>
     </footer>
+    <script src="assets.js"></script>
   </body>
 </html>
